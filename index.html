@@ -118,8 +118,7 @@
             if (isIncrease == false && measurementCount > 0) {
                 measurementNewCount = measurementCount - 1;
             }
-            document.getElementById(measurement + '-count').value = measurementNewCount;
-            // const firstTotal = firstNewCount * 150;
+            document.getElementById(measurement + '-count').value = measurementNewCount
             let measurementTotal = 0;
             if (measurement == 'first') {
                 measurementTotal = measurementNewCount * 150;
