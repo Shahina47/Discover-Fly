@@ -50,8 +50,8 @@
             </div>
             <div class="input-group f-class">
                 <div>
-                    <label  for="">First Classs<span id="first-total">($150)</span></label>
-                    <input id="first-count" class="inp-style inp-width" type="number" value ="0">
+                    <label  for="">First Classs<span id="first-total">($00)</span></label>
+                    <input id="first-count" class="inp-style inp-width"  value ="0">
                 </div>
                 <div class="plus-minus-btn">
                     <button onclick="handleMeasurementChange('first', true)">+</button>
@@ -61,8 +61,8 @@
             
             <div class="input-group f-class">
                 <div>
-                    <label for="">Economy <span id="economy-total">($100)</span></label>
-                    <input id="economy-count" class="inp-style inp-width" type="number" value="0">
+                    <label for="">Economy <span id="economy-total">($00)</span></label>
+                    <input id="economy-count" class="inp-style inp-width"  value="0">
                 </div>
                 <div class="plus-minus-btn">
                     <button onclick="handleMeasurementChange('economy', true)">+</button>
@@ -118,8 +118,7 @@
             if (isIncrease == false && measurementCount > 0) {
                 measurementNewCount = measurementCount - 1;
             }
-            document.getElementById(measurement + '-count').value = measurementNewCount;
-            // const firstTotal = firstNewCount * 150;
+            document.getElementById(measurement + '-count').value = measurementNewCount
             let measurementTotal = 0;
             if (measurement == 'first') {
                 measurementTotal = measurementNewCount * 150;
